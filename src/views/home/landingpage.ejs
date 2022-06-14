@@ -101,10 +101,10 @@
                   <% produtos.forEach(produto => { %>
                     <div class="col">
                       <div class="card shadow-sm">
-                        <img class="bd-placeholder-img card-img-top" src="https://images.kabum.com.br/produtos/fotos/128561/console-microsoft-xbox-series-s-500gb-branco-rrs-00006_1601067301_gg.jpg" width="100%" height="225"></img>
+                        <img class="bd-placeholder-img card-img-top" src="<%= produto.imagem %>" width="100%" height="225"></img>
                         <div class="card-body">
-                          <h3>Console Microsoft Xbox Series S, 512GB, Branco </h3>
-                          <h4 class="text-muted">R$ 1.299,90  <small>À vista no pix</small></h4>
+                          <h3><%= produto.nome %> </h3>
+                          <h4 class="text-muted">R$ <%= produto.preco %>  <small>À vista no pix</small></h4>
                           <div class="d-flex justify-content-between align-items-center">
                             <div class="btn-group">
                               <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
