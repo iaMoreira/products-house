@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products House</title>
+    <link rel="stylesheet" href="/css/global.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+    <%- include('../../partials/header') %>
+
+    <main class="">
+        <section class="container">
+
+            <h1>Produtos</h1>
+            <a href="/adm/produtos/cadastro" class="btn btn-primary mb-5" >Cadastrar</a>
+            <table class="table table-dark table-striped table-bordered ">
+                <thead>
+                    <tr>
+                    <th scope="col">Identificador</th>
+                    <th scope="col">imagem</th>
+                    <th scope="col">Nome</th>
+                    <th scope="col">Preço</th>
+                    <th scope="col">Ativo</th>
+                    <th scope="col">Ações</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <% produtos.forEach(produto => { %> 
+                        <tr>
+                            <th scope="row"> <%= produto.id %></th>
+                            <td><img class="thumb" src="<%= produto.imagem %>" alt="" width="100px" height="100px"></td>
+                            <td><%= produto.nome %></td>
+                            <td><%= produto.preco %></td>
+                            <td><%= produto.ativo ? "Habilitado" : "Desabilitado" %></td>
+                            <td>
+                                <a href="/adm/produtos/<%= produto.id %>" type="button" class="btn btn-primary">Abrir</a>
+                                <a href="/adm/produtos/<%= produto.id %>/editar" type="button" class="btn btn-secondary">Editar</a>
+                                <form action="/adm/produtos/<%= produto.id %>?_method=DELETE" method="POST">
+                                    <button type="submit" class="btn btn-danger">Excluir</button>
+                                </form>
+                            </td>
+                        </tr>
+                    <% }) %> 
+
+                </tbody>
+            </table>
+
+
+        </section>
+        
+    </main>
+
+    <%- include('../../partials/footer') %>
+  
+</body>
+
+</html>
