@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products House</title>
+    <link rel="stylesheet" href="/css/global.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <style>
+    </style>
+</head>
+
+<body>
+
+    <%- include('../partials/header') %>
+
+        <main class="my-5 pt-5">
+            <section class="d-flex justify-content-evenly container">
+                <div>
+                    <img src="<%= produto.imagem %>" height="520px" alt="">
+                </div>
+
+                <div id="blocoValores" class="d-flex flex-column justify-content-center pt-3 w-50">
+                    <div class="f">Vendido e entregue por: <b>Digital House! </b> |<b> Em estoque</b></div>
+                    <div class="d-flex align-center mt-3 justify-content-between">
+                        <div>
+                            <span>R$ 3.058,95</span>
+                            <h4>R$ <%= produto.preco %></h4>
+                            <span >À vista no PIX <span>com até <b>5% OFF</b></span></span>
+                        </div>
+                        <button  class="btn btn-success">COMPRAR</button>
+                    </div>
+                   
+                    <div class="d-flex flex-column mt-3">
+                        <b>R$ 1.998,95</b>
+                        <span>Em até 10 x de <b>R$ 199,89</b> sem juros no cartão</span>
+                        <span>Ou em 1x no cartão com até <b>5 % OFF</b></span>
+                        <button>Ver mais opções de pagamento</button>
+                    </div>
+
+                    <div class="mt-5">
+                        <%= produto.descricao %>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <%- include('../partials/footer') %>
+</body>
+
+</html>
