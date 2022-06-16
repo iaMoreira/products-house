@@ -7,6 +7,14 @@
             "imagem": "https://images.kabum.com.br/produtos/fotos/128561/console-microsoft-xbox-series-s-500gb-branco-rrs-00006_1601067301_gg.jpg",
             "preco": "2.249,90",
             "ativo": true
+        },
+        {
+            "nome": "Headset Gamer HyperX Cloud Stinger,",
+            "imagem": "https://images.kabum.com.br/produtos/fotos/81132/81132_index_gg.jpg",
+            "preco": "249",
+            "descricao": "Completa e versátil, a linha de headsets Cloud foi projetada para as necessidades de qualquer nível de jogador. Independente do seu sistema, estilo de jogo e características este headset irá te surpreender. O Cloud Stinger é um modelo licenciado oficialmente pela Xbox, perfeito para jogadores de Xbox One! Conforto, tecnologia e design a sua altura.",
+            "ativo": true,
+            "id": "955fed6c-8ed9-4950-80fc-6eb80e52e28e"
         }
     ]
 }
