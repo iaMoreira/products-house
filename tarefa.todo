@@ -1,0 +1,10 @@
+✔ 1. rodar o landingpage.ejs no endereço '/' @done(22-06-15 20:39)
+✔ 2. view de um unico produto para o consumidor que se encontra na 'produtos/detalhes' @done(22-06-15 20:59)
+✔ 3. Listagem de todos o produtos do admin @done(22-06-15 21:16)
+✔ 4. Tela de cadastro de produto do admin @done(22-06-15 21:47)
+☐ 5. Tela de edição de produto do admin
+☐ 6. Tela de visualização do produto do admin
+☐ 7. Tela de cadastro com criptografia de senha
+☐ 8. Tela login com session
+☐ 9. Tela de carrinho
+☐ 10. Middlewares
